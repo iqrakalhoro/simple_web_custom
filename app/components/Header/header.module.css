@@ -1,0 +1,59 @@
+
+.header {
+    background-color: #550707;
+    padding: 30px 30px;
+    border-bottom: 1px solid #eaeaea;
+  } 
+.nav {
+    display: flex;
+    justify-content: center;
+} 
+.ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    padding: 0;
+    margin: 0;
+  }
+.li {
+    display: inline;
+  }
+.home, .about, .contact, .service {
+    text-decoration: none;
+    color: #ffcde3;
+    font-weight: 500;
+    font-size: large;
+    transition: color 0.3s ease;
+}
+
+.home:hover, .about:hover, .contact:hover, .service:hover {
+    color: #f57c9e;
+  }
+
+
+  @media (max-width: 768px) {
+    .header {
+        padding: 15px; 
+    }
+
+    .ul {
+        flex-direction: row; 
+        gap: 15px;
+        align-items: center;
+    }
+
+    .home, .about, .contact, .service {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .ul {
+        gap: 10px;
+    }
+
+    .home, .about, .contact, .service {
+        font-size: 0.9rem; 
+    }
+}
+
